@@ -1,13 +1,90 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Imobiliária Fullstack</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        O que você quer fazer com o seu imóvel?
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>
+            Desejo COMPRAR
+          </ion-label>
+          <ion-radio value="COMPRAR" slot="start"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Desejo VENDER
+          </ion-label>
+          <ion-radio value="VENDER" slot="start"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Contato
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Nome" labelPlacement="floating" placeholder="Mikhail Saratov"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="email" label="Email" labelPlacement="floating" placeholder="example@email.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="password" label="Senha" labelPlacement="floating"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="password" label="Confirmar Senha" labelPlacement="floating"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="tel" label="Telefone" labelPlacement="floating" placeholder="+55 (11)xxxxx-xxxx"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-content>
+        <ion-card-title>Informações sobre o Endereço</ion-card-title>
+      </ion-card-content>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Endereço" labelPlacement="floating" placeholder="Avenida das Nações Unidas"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="tel" label="Número" labelPlacement="floating" placeholder="1987"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Bairro" labelPlacement="floating" placeholder="Jardim das Flores"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Complemento" labelPlacement="floating" placeholder="Apartamento n 14"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="CEP" labelPlacement="floating" placeholder="12345-123"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Estado" labelPlacement="floating" placeholder="São Paulo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input color="secondary" type="text" label="Cidade" labelPlacement="floating" placeholder="Barueri"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button class="initial-button" color="primary" size="full">Forgot email/password</ion-button>
+
+
 </ion-content>
